@@ -385,9 +385,11 @@ plot_losses(epochs_tensor, tokens_seen, train_losses, val_losses)
 start_context = "Every effort moves you"
 tokenizer = tiktoken.get_encoding("gpt2")
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 token_ids = generate_text_simple(
     model=model,
-    idx=text_to_token_ids(start_context, tokenizer),
+    idx=text_to_token_ids(start_context, tokenizer).to(device),
     max_new_tokens=10,
     context_size=GPT_CONFIG_124M["context_length"]
 )

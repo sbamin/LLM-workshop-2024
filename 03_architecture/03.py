@@ -44,7 +44,7 @@ print("tiktoken version:", version("tiktoken"))
 # %% [markdown]
 # - In the previous notebook, we used small embedding dimensions for token inputs and outputs for ease of illustration, ensuring they neatly fit on the screen
 # - In this notebook, we consider embedding and model sizes akin to a small GPT-2 model
-# - We'll specifically code the architecture of the smallest GPT-2 model (124 million parameters), as outlined in Radford et al.'s [Language Models are Unsupervised Multitask Learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) (note that the initial report lists it as 117M parameters, but this was later corrected in the model weight repository)
+# - We'll specifically code the architecture of the smallest GPT-2 model (124 million parameters), as outlined in Radford et al.'s [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) (note that the initial report lists it as 117M parameters, but this was later corrected in the model weight repository)
 # 
 
 # %% [markdown]
